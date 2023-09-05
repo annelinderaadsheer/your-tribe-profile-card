@@ -25,8 +25,8 @@ article {
   max-width: 25em;
   min-width: 20em;
   border-radius: 1rem;
-  background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  background: rgb(225, 123, 200);
+  background: linear-gradient(0deg, rgb(225,123,200) 40%, rgb(225,123,200));
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -41,8 +41,16 @@ header {
 
 h1 {
   margin: 2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: white;
 }
+
+em {
+  font-size: 20px;
+  color: white;
+}
+
+em {front-size: 30 px}
+
 
 button {
   position: absolute;
@@ -53,13 +61,14 @@ button {
   padding: .25rem;
   border: none;
   border-radius: 50%;
-  background: rgba(0,239,255,1);
+  background: rgba(225,123,200
+  );
   transform: scale(.8);
   transition: .25s;
 }
 button:focus {
   outline: none;
-  background: #202592;
+  background: rgba(225,123,200);
 }
 button:focus svg {
   stroke: rgba(0,239,255,1);
@@ -133,6 +142,8 @@ dd:nth-of-type(2){
 
 p { 
   margin: 0;
+  color: white;
+
 }
 
 article > p {
