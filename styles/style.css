@@ -1,57 +1,62 @@
-        
-* 
-/* Dit maakt de website toegankelijker voor verschillende browsers*/
-{
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
   box-sizing: border-box;
 }
-
-/* Hier onder zie je alles wat het belangrijkst is en wat je ziet in het geheel*/
-body {
+.container{
+  width: 100%;
   height: 100vh;
-  font-family: sans-serif;
-  color: #000000;
-  background: rgb(206,210,187);
-background: linear-gradient(0deg, rgba(206,210,187,1) 0%, rgba(219,205,169,1) 100%);
+  background: #ededff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
-
-/* Hier onder staat mijn naam en betreft de titel*/
-h1 {
-  margin: 5rem 0 1rem;
-  color: rgb(0, 0, 0);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 25px;
-  margin-left: 3%;
+.profile{
+  width: 90%;
+  max-width: 320px;
+  background-color: #32384f;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 10px 140px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: #fff;
 }
+.top-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 
-/* Deze codes zijn gebruikt voor mijn foto. Hier heb ik onder andere de grootte en de vorm van mijn foto in staan*/
-img {
-  position: sticky;
-  top: 2rem;
-  width: 20em;
-  height: auto;
-  border: 5px solid #4d89537b;
-  border-radius: 10em;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.363);
-  transition: .25s .15s;
 }
+.fa-heart{
+  margin-right: 10px;
 
-/*Dit is het lettertype dat ik heb gebruikt voor de tekst*/
-*{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-
-/*Hier zie je dat als je met de muis over de foto gaat, de tekst van h2 in beeld komt in 1s*/
-.text h2{
-  opacity: 0%;
 }
-body:has(img:hover) h2 {
-  opacity: 100%;
-  transition: all 1s ease;
+.user-img{
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
 }
-
-/*Hier zie je dat als je met de muis over de foto heen gaat die wazig wordt en omhoog springt*/
-body:has(img:hover)
-{opacity: 0.6;
-  transform: translateY(-20px);
-  transition: transform 0.3s;
+.profile h2{
+  padding: 10px 10px;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 20px;
 }
+.profile p{
+  font-size: 12px;
 
-
+}
+.btn{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #8d68c5, #e34494);
+  display: inline-block;
+  margin: 40px 0;
+  font-size: 15px;
+}
